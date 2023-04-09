@@ -7,7 +7,7 @@ const expressHbs = require("express-handlebars");
 const session = require("express-session");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 //import routes
 const registerRouter = require("./routers/registerRouter.js");
